@@ -1,11 +1,15 @@
 {
-  "name": "shweshi/opengraph",
+  "name": "quangtam/opengraph",
   "description": "A Laravel package to fetch website Open Graph metadata.",
   "type": "library",
   "authors": [
     {
       "name": "Shashi Prakash Gautam",
       "email": "contactmespg@gmail.com"
+    },
+    {
+      "name": "Quang Tam Vu",
+      "email": "quangtamvu@gmail.com"
     }
   ],
   "require": {},
@@ -32,7 +36,7 @@
         "shweshi\\OpenGraph\\Providers\\OpenGraphProvider"
       ],
       "aliases": {
-        "OpenGraph": "shweshi\\OpenGraph\\Facades\\OpenGraphFacade"
+        "OGMeta": "shweshi\\OpenGraph\\Facades\\OpenGraphFacade"
       }
     }
   }
