@@ -1,6 +1,12 @@
 # Changelog
 
+
 All notable changes to `OpenGraph` will be documented in this file.
+
+## 1.0.6 - 2019-06-30
+
+- Fix conflict with SEO Meta Tool of Laravel
+- Add method to get meta from html content OGMeta::get()
 
 ## 1.0.5 - 2019-06-13
 

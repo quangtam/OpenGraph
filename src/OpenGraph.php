@@ -12,6 +12,14 @@ class OpenGraph
         /**
          * parsing starts here:.
          */
+        return $this->get($html, $allMeta, $lang);
+    }
+
+    public function get($html, $allMeta = null, $lang = null)
+    {
+        /**
+         * parsing starts here:.
+         */
         $doc = new DOMDocument();
         @$doc->loadHTML('<?xml encoding="utf-8" ?>'.$html);
 
