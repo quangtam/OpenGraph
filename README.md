@@ -61,7 +61,7 @@ Perform the following operations in order to use this package
 - Install via composer
 
 ```
-composer require "shweshi/opengraph"
+composer require "quangtam/opengraph"
 ```
 
 If you do not run Laravel 5.5 (or higher), then add the service provider in config/app.php:
@@ -81,7 +81,7 @@ If you do not run Laravel 5.5 (or higher), then add the service provider in conf
   ```
   'aliases' => array(
       ....
-      'OpenGraph' => shweshi\OpenGraph\Facades\OpenGraphFacade::class
+      'OGMeta' => shweshi\OpenGraph\Facades\OpenGraphFacade::class
   ),
   ```
 
@@ -96,9 +96,9 @@ If you do run the package on Laravel 5.5+, package auto-discovery takes care of 
 - After following the above steps,
 
   ```
-  use OpenGraph;
+  use OGMeta;
 
-  $data = OpenGraph::fetch("https://unsplash.com/");
+  $data = OGMeta::fetch("https://unsplash.com/");
   ```
 
   this will give you an array like this..
@@ -117,7 +117,7 @@ If you do run the package on Laravel 5.5+, package auto-discovery takes care of 
   You can also pass an optional parameter either true or false along with url. When set false it will only fetch basic metadata and in case of true it will fetch all the other optional metadata as well like audio, video, music and twitter metatags as well.
 
   ```
-  $data = OpenGraph::fetch("https://unsplash.com/", true);
+  $data = OGMeta::fetch("https://unsplash.com/", true);
   ```
 
   this will give you an array like this..
