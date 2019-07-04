@@ -72,7 +72,7 @@ If you do not run Laravel 5.5 (or higher), then add the service provider in conf
   ```
   'providers' => array(
       ....
-      shweshi\OpenGraph\Providers\OpenGraphProvider::class,
+      quangtam\OpenGraph\Providers\OpenGraphProvider::class,
   ),
   ```
 
@@ -81,7 +81,7 @@ If you do not run Laravel 5.5 (or higher), then add the service provider in conf
   ```
   'aliases' => array(
       ....
-      'OGMeta' => shweshi\OpenGraph\Facades\OpenGraphFacade::class
+      'OGMeta' => quangtam\OpenGraph\Facades\OpenGraphFacade::class
   ),
   ```
 

@@ -19,12 +19,12 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "shweshi\\OpenGraph\\": "src/"
+      "quangtam\\OpenGraph\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "shweshi\\OpenGraph\\Test\\": "tests"
+      "quangtam\\OpenGraph\\Test\\": "tests"
     }
   },
   "scripts": {
@@ -33,10 +33,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "shweshi\\OpenGraph\\Providers\\OpenGraphProvider"
+        "quangtam\\OpenGraph\\Providers\\OpenGraphProvider"
       ],
       "aliases": {
-        "OGMeta": "shweshi\\OpenGraph\\Facades\\OpenGraphFacade"
+        "OGMeta": "quangtam\\OpenGraph\\Facades\\OpenGraphFacade"
       }
     }
   }

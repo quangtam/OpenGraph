@@ -1,6 +1,6 @@
 <?php
 
-namespace shweshi\OpenGraph\Facades;
+namespace quangtam\OpenGraph\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

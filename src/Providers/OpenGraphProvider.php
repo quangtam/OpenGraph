@@ -1,6 +1,6 @@
 <?php
 
-namespace shweshi\OpenGraph\Providers;
+namespace quangtam\OpenGraph\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
