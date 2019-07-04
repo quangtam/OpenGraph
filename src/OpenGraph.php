@@ -1,6 +1,6 @@
 <?php
 
-namespace shweshi\OpenGraph;
+namespace quangtam\OpenGraph;
 
 use DOMDocument;
 
@@ -50,6 +50,20 @@ class OpenGraph
         }
 
         return $metadata;
+    }
+
+    public function getJsonLd($html) {
+        $doc = new DOMDocument();
+        @$doc->loadHTML('<?xml encoding="utf-8" ?>'.$html);
+
+        $tags = $doc->getElementsByTagName('script');
+
+        foreach ($tags as $tag) {
+            $metaproperty = ($tag->hasAttribute('type')) ? $tag->getAttribute('type') : '';
+            if($metaproperty == 'application/ld+json') {
+                return $tag;
+            }
+        }
     }
 
     protected function curl_get_contents($url, $lang)
